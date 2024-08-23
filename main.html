@@ -7,80 +7,80 @@
 </head>
 
 <body>
-
-	<div class="test-div">
-        <h1 data-ns-test="block-inline-h1">Test1</h1>
-        <h1 data-ns-test="block-inline-h1">Test2</h1>
-    </div>
 	
 	<div class = "test-div">
-		<button data-ns-test="block-inline-button">Test1</button>
-        <button data-ns-test="block-inline-button">Test2</button>
+		<button data-ns-test="inline-button">Test1</button>
+        <button data-ns-test="inline-button">Test2</button>
 	</div>
 
 	<div class="test-div">
-        <div data-ns-test="block-inline-div">Test1</div>
-        <div data-ns-test="block-inline-div">Test2</div>
+        <div data-ns-test="block-div">Test1</div>
+        <div data-ns-test="block-div">Test2</div>
     </div>
 
 	<div class="test-div">
-        <span data-ns-test="block-inline-span">Test1</span>
-        <span data-ns-test="block-inline-span">Test2</span>
+        <span data-ns-test="inline-span">Test1</span>
+        <span data-ns-test="inline-span">Test2</span>
     </div>
 
 	<div class="test-div">
-        <p data-ns-test="block-inline-p">Test1</p>
-        <p data-ns-test="block-inline-p">Test2</p>
+        <p data-ns-test="block-p">Test1</p>
+        <p data-ns-test="block-p">Test2</p>
     </div>
 
 	<div class="test-div">
-        <input data-ns-test="block-inline-input" value="Test1">
-        <input data-ns-test="block-inline-input" value="Test2">
+        <input data-ns-test="inline-input" value="Test1">
+        <input data-ns-test="inline-input" value="Test2">
     </div>
 
 	<div class="test-div">
-        <cite data-ns-test="block-inline-cite">Test1</cite>
-        <cite data-ns-test="block-inline-cite">Test2</cite>
+        <cite data-ns-test="inline-cite">Test1</cite>
+        <cite data-ns-test="inline-cite">Test2</cite>
     </div>
 
 	<div class="test-div">
-        <code data-ns-test="block-inline-code">Test1</code>
-        <code data-ns-test="block-inline-code">Test2</code>
+        <code data-ns-test="inline-code">Test1</code>
+        <code data-ns-test="inline-code">Test2</code>
     </div>
 
 	<div class="test-div">
-        <sup data-ns-test="block-inline-sup">Test1</sup>
-        <sup data-ns-test="block-inline-sup">Test2</sup>
+        <h1 data-ns-test="block-h1">Test1</h1>
+        <h1 data-ns-test="block-h1">Test2</h1>
     </div>
 
 	<div class="test-div">
-        <sub data-ns-test="block-inline-sub">Test1</sub>
-        <sub data-ns-test="block-inline-sub">Test2</sub>
+        <sup data-ns-test="inline-sup">Test1</sup>
+        <sup data-ns-test="inline-sup">Test2</sup>
+    </div>
+
+	<div class="test-div">
+        <sub data-ns-test="inline-sub">Test1</sub>
+        <sub data-ns-test="inline-sub">Test2</sub>
     </div>
 	
     <script type="text/javascript" src="./script.js">
-		const elementTypes = {
-            "block-inline-button": "Inline",
-            "block-inline-div": "Block",
-            "block-inline-span": "Inline",
-            "block-inline-p": "Block",
-            "block-inline-input": "Inline",
-            "block-inline-cite": "Inline",
-            "block-inline-code": "Inline",
-            "block-inline-h1": "Block",
-            "block-inline-sup": "Inline",
-            "block-inline-sub": "Inline",
-        };
+		// const elementTypes = {
+  //           "block-inline-button": "Inline",
+  //           "block-inline-div": "Block",
+  //           "block-inline-span": "Inline",
+  //           "block-inline-p": "Block",
+  //           "block-inline-input": "Inline",
+  //           "block-inline-cite": "Inline",
+  //           "block-inline-code": "Inline",
+  //           "block-inline-h1": "Block",
+  //           "block-inline-sup": "Inline",
+  //           "block-inline-sub": "Inline",
+  //       };
 
-        function checkElements() {
-            const elements = document.querySelectorAll('[data-ns-test]');
-            elements.forEach(el => {
-                const displayType = window.getComputedStyle(el).display;
-                console.log(`${el.dataset.nsTest}: ${displayType}`);
-            });
-        }
+  //       function checkElements() {
+  //           const elements = document.querySelectorAll('[data-ns-test]');
+  //           elements.forEach(el => {
+  //               const displayType = window.getComputedStyle(el).display;
+  //               console.log(`${el.dataset.nsTest}: ${displayType}`);
+  //           });
+  //       }
 
-        checkElements();
+  //       checkElements();
 </script>
 
 </body>
